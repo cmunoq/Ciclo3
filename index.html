@@ -1,58 +1,65 @@
 <!DOCTYPE html>
-<html>
-<!-----Cabcera del documento------>
+<html lang="en">
+
+<!-----Cabecera del documento -->
 
 <head>
     <meta charset="UTF-8">
-    <!---titulo------>
-    <title>Mi Primera Pagina</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">  
+    <title>Mi Pagina Web</title>
 </head>
 
-<!------Cuerpo del documento------->
-
+<!----Cuerpo del documento  -->
 <body>
-    <!---cabecera del documento---->
-    <header>
-        <h1>Mi Primera pagina</h1>
-        <h2>Subtitulo</h2>
-        <h3>Texto</h3>
-        <h4>Texto4</h4>
-        <h5>Texto5</h5>
-    </header>
 
-    <section>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dignissimos, quas non magni at, sequi
-            iusto
-            temporibus accusantium saepe sit facilis eaque rerum aliquid aliquam totam repellat quaerat placeat hic?
-        </p>
-        <br>
-        <hr>
-    </section>
+<header>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Conócenos</a>
+            </li>
+            <li>
+                <a href="#">Contácto</a>
+            </li>
 
-    <ul>
-        <li>Item1</li>
-        <li>Item2</li>
-    </ul>
-    <!--formulario----->
-    <form>
-        <input type="text" placeholder="Nombre">
-        <input type="text" placeholder="Apellido">
-        <input type="email" required placeholder="email">
-        <input type="tel" placeholder="Telefono">
-        <input type="number" placeholder="Edad">
-    </form>
+        </ul>
+    </nav>
 
-    <!--Imagenes-->
-    <img style="width: 100px; height: 200px" src="https://www.upb.edu.co/wcs_statics/pp/img/escudo-upb.svg" alt="Logo UPB">
-    
+</header>
+
+
+
+    <div id="cabecera">
+        <h1 id="titulo">Mi Pagina Web</h1>
+    </div>
+
+    <div id="padre">
+        <div id="hijo1">
+            <img src="./assets/upb.jpeg" alt=" logo UPB">
+        </div>
+        <div id="hijo2">
+            <h1>Estudiante</h1>
+            <!---Formulario-->
+            <form>
+                <input type="text" placeholder="Nombre">
+                <br>
+                <input type="text" placeholder="Apellido">
+                <br>
+                <input type="email" placeholder="Email">
+                <br>
+                <input type="tel" placeholder="Telefono">
+                <br>
+                <button>Registrar</button>
+
+            </form>
+        </div>
+    </div>
+
 </body>
-
-<!-----Pie de pagina--------->
-
-<footer>
-    informacion de contacto 
-
-</footer>
 
 </html>

@@ -1,0 +1,100 @@
+body{
+    margin: 0px;
+}
+
+
+
+#cabecera{
+    width: 100vw;
+    height: 120px;
+    background-color: aquamarine;
+    margin-bottom: 20px;
+    animation: cambiarColor 2s ease-in-out infinite;
+}
+
+img{
+    width: 200px;
+    height: 150px;
+}
+
+#padre{
+    background-color: bisque;
+    width: 100vw;
+    
+}
+
+#hijo1{
+    width: 50%;
+    height: 100%;
+    float: left;
+
+}
+#hijo2{
+    width: 50%;
+    height: 100%;
+    float: right;  
+}
+
+#titulo{
+    margin: 0px;
+    animation: mover 4s ease-in-out infinite;
+}
+
+@keyframes mover {
+    0%{
+        transform: translateY(0px) translateX(0px);        
+    }
+    25%{
+        transform: translateY(150px) translateX(1150px);        
+    }
+    50%{
+        transform: translateY(0px) translateX(1150px);
+    }
+    75%{
+        transform: translateY(150px) translateX(0px);
+    }   
+    100%{
+        transform: translateY(0px) translateX(0px);
+    } 
+}
+
+@keyframes cambiarColor {
+    from{
+        background-color: green;
+    }
+    to{
+        background-color: aqua;
+    }
+}
+
+header{
+    position: absolute;
+    background-color: rgb(34, 33, 33);
+    width: 100%;
+
+}
+
+header nav{
+    background-color: rgb(34, 33, 33);
+    color: white;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    float: left;
+}
+
+header nav ul li a{
+    text-decoration-line: none;
+    color: white;
+    padding: 16px;
+}
+
+header nav ul li a:hover{
+    background-color: blue;
+}
